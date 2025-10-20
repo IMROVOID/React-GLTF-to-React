@@ -1,5 +1,15 @@
-# Logs
-logs
+# Dependencies and Build Artifacts
+/node_modules
+/server/node_modules
+/client/node_modules
+/build
+/dist
+/dist-ssr
+.pnpm-store
+package-lock.json
+
+# Logs and Debugging
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +17,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Configuration and Metadata
 *.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+*.tsbuildinfo
 .DS_Store
+
+# Editor/IDE Files
+# Keep .vscode/extensions.json, ignore everything else in .vscode/
+/.vscode
+!.vscode/extensions.json
+/.takeout
+.idea
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Testing
+/test
+
+# Specific Files
+takeout.py
+.takeoutignore
