@@ -69,15 +69,22 @@ export const Hamburger = styled.div`
   }
 `;
 
-export const LeftMiddle = styled.div`
-  position: absolute;
-  bottom: 50%;
-  right: 5vw;
+export const Button = styled.button`
+  background-color: #252525;
+  color: white;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1em;
-  letter-spacing: -0.01em;
-  font-size: 12px;
-  transform: rotate(90deg) translate3d(50%, 0, 0);
-  transform-origin: 100% 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
 `;

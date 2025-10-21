@@ -1,37 +1,19 @@
-import { Container, TopLeft, BottomLeft, BottomRight, Hamburger } from '../layout/styles.ts';
+import { Container, TopLeft, BottomLeft, BottomRight, Hamburger, Button } from '../layout/styles.ts';
 
 export default function Overlay() {
   return (
     <Container>
       <TopLeft>
         <h1>
-          LANDING
+          GLTF to
           <br />
-          PAGES —
+          React GLB —
         </h1>
-        <p>In React & Threejs —</p>
+        <p>Optimize your 3D models for the web —</p>
+        <Button>Select GLTF File</Button>
       </TopLeft>
-      <BottomLeft>
-        A runtime deconstruction of <a href="https://playful.software">playful.software</a>
-      </BottomLeft>
-      <BottomRight>
-        Inspiration and ideas
-        <br />
-        Fundamentals
-        <br />
-        Finding models
-        <br />
-        Preparing them for the web
-        <br />
-        Displaying and changing models
-        <br />
-        Animation fundamentals
-        <br />
-        Effects and making things look good
-        <br />
-        Performance and time to load
-        <br />
-      </BottomRight>
+      <BottomLeft></BottomLeft>
+      <BottomRight></BottomRight>
       <Hamburger>
         <div />
         <div />
